@@ -5,7 +5,7 @@ class TestBaseConvert(unittest.TestCase):
 
     def test_base2(self):
         self.assertEqual(convert(45,2),"101101")
-        #self.assertEqual(convert(0,2),"0")
+        self.assertEqual(convert(0,2),"0")
         self.assertEqual(convert(30,2),"11110")
     def test_base4(self):
         self.assertEqual(convert(30,4),"132")
