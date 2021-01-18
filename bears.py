@@ -18,8 +18,8 @@ def bears(n):
             ls_t_f = int(str(n)[-1]) # first digit from the right
             ls_t_s = int(str(n)[-2]) # second digit from the right
             mult_digt = ls_t_f * ls_t_s
-            if mult_digt != 0 and bears(n-mult_digt): # if n is divible by 3 or 4mult_digit != 0 prevents infinite recursion 
-                return True
+            if mult_digt != 0 and bears(n-mult_digt): # if n is divible by 3 or 4, multiply n's first and second digit from the right and subtract that value from n
+                return True                           # mult_digit != 0 prevents infinite recursion 
         if n % 5 == 0 and bears(int(n-42)): # if n is divisible by 5, subtract n by 42
             return True
         else:
