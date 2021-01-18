@@ -1,3 +1,4 @@
+# CPE 202 Project 1
 # n is an integer
 # int -> bool
 # returns true if the given number ends up by 42 after applying conditions, false otherwise.
